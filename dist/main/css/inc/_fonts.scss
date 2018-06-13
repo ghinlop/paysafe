@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'UTMLinotypeZapfinoKT';
+    src: url("../fonts/UTM-LinotypeZapfino-KT.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'VutaFont';
+    src: url("../fonts/VutaFonts.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTMNeo';
+    src: url("../fonts//UTM-Neo-Sans-Intel.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTMNeobold';
+    src: url("../fonts/UTM-Neo-Sans-IntelBold.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$fontdefault: 'Cabin',
+'Tahoma',
+Arial,
+"Lucida Grande",
+sans-serif;
+$utmlion: 'UTMLinotypeZapfinoKT';
+$utmneobold: 'UTMNeobold';
+$utmneo: 'UTMNeo';
+$tahoma: 'Tahoma';
+$vutaFont: 'VutaFont';
+$fa: 'Fontawesome';
+.utmlion {
+    font-family: $utmlion;
+}
+
+.utmneobold {
+    font-family: $utmneobold;
+}
+
+.utmneo {
+    font-family: $utmneo;
+}
+
+.tahoma {
+    font-family: $tahoma;
+}
+
+.vutafont {
+    font-family: $vutaFont;
+}

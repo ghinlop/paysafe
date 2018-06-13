@@ -1,0 +1,112 @@
+@include border($neteller, 'neteller' );
+@include border($skrill, 'skrill' );
+.logo{
+    img{
+        display: block;
+        max-width: 180px;
+    }
+}
+#aside{
+    a{
+        @include txt-color(#fff,$skrill);
+        @include bg-color(transparent, $neteller);
+        padding: 15px;
+        display: block;
+    }
+    .uk-offcanvas-bar{
+        padding: unset;
+    }
+}
+.icon-widget{
+    padding-right: 0;
+    img{
+        display: block;
+        max-width: 75px;
+        width: 100%;
+        background-color: #fff;
+    }
+}
+.widget-list{
+    .list-group-item{
+        padding: 0 15px;
+        a{
+            padding: 15px 0;
+        }
+        .active{
+            @include txt-color(#fff!important);
+        }
+    }
+    .buy-list{
+        .list-group-item{
+            @include border($neteller);
+            a{
+                @include txt-color($neteller-hover, #fff);
+                @include bg-color(transparent, $neteller);
+            }
+            .active{
+                @include bg-color($neteller);
+            }
+        }
+    }
+    .sell-list{
+        .list-group-item{
+            @include border($skrill);
+            a{
+                @include txt-color($skrill-hover, #fff);
+                @include bg-color(transparent, $skrill);
+            }
+            .active{
+                @include bg-color($skrill);
+            }
+        }
+    }
+}
+.rating-widget{
+    padding: 15px 0;
+    max-height: 300px;
+    overflow-y: auto;
+    li{
+        padding: 0 15px;
+        border: 1px solid #ddd;;
+        border-left: 2px solid $neteller-hover;
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}
+@include md{
+    aside{
+        .uk-offcanvas{
+            display: block;
+            position: static;
+        }
+        .uk-offcanvas-bar{
+            position: static;
+            width: auto;
+            background-color: transparent;
+            @include transform(unset);
+        }
+        li{
+            &:not(:last-child) a{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@include sm{
+    nav a{
+        @include txt-color(#ddd!important, #fff!important);
+    }
+    #aside ul{
+        min-height: 100vh!important;
+        background-color: $skrill;
+        li a{
+            display: block;
+            padding: 8px 15px;
+            @include bg-color(transparent, $skrill-hover);
+        }
+    }
+}

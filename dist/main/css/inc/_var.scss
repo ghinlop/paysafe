@@ -1,0 +1,61 @@
+$color-1: #0fb7f9;
+$color-2: #237baa;
+$color-3: #f96502;
+$color-4: #e05c04;
+$color-5: #f4a137;
+$color-6: #ecf6f9;
+$neteller: #83ba3b;
+$neteller-hover: #65902e;
+$skrill: #4f2556;
+$skrill-hover: #485160;
+.color-1{
+    color: $color_1!important;
+}
+.color-2{
+    color: $color-2!important;
+}
+.color-3{
+    color: $color-3!important;
+}
+.color-4{
+    color: $color-4!important;
+}
+.color-5{
+    color: $color-5!important;
+}
+.color-6{
+    color: $color-6!important;
+}
+.txt-neteller{
+    color: $neteller!important;
+    &.txt-hover{
+        color: $neteller-hover!important;
+    }
+}
+.txt-skrill{
+    color: $skrill!important;
+    &.txt-hover{
+        color: $skrill-hover!important;
+    }
+}
+.bg-1{
+    background-color: $color-1!important;
+}
+.bg-2{
+    background-color: $color-2!important;
+}
+.bg-3{
+    background-color: $color-3!important;
+}
+.bg-4{
+    background-color: $color-4!important;
+}
+.bg-5{
+    background-color: $color-5!important;
+}
+.bg-6{
+    background-color: $color-6!important;
+}
+.bg-neteller{
+    @include bg-color($neteller);
+}
