@@ -1,0 +1,57 @@
+<%- include('./layout/header.ejs') -%>
+    <header>
+        <%- include('./comp/nav.ejs') -%>
+    </header>
+    <main class="uk-container py-3">
+        <div class="row">
+            <div class="col-md-3">
+                <%- include('./comp/widget-left.ejs') -%>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-white p-3">
+                    <ul class="uk-breadcrumb">
+                        <li>
+                            <a href="/">Trang chủ</a>
+                        </li>
+                        <li>
+                            <span>Liên hệ</span>
+                        </li>
+                    </ul>
+                    <form action="">
+                            <div class="form-group">
+                                <label class="uk-form-label" for="fullname">Họ tên</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="fullname" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="uk-form-label" for="phone">Số điện thoại</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="phone" type="text">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="uk-form-label" for="email">Email</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="email" type="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="uk-form-label" for="fullname">Nội dung</label>
+                                <div class="uk-form-controls">
+                                    <textarea class="uk-textarea" id="fullname"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group text-center">
+                                <button class="btn btn-dark btn-lg px-4">Gửi hỗ trợ</button>
+                            </div>
+                        </form>
+                </div>
+                
+            </div>
+            <div class="col-md-3">
+                <%- include('./comp/widget-right.ejs') -%>
+            </div>
+        </div>
+    </main>
+    <%- include('./layout/footer.ejs') -%>

@@ -1,112 +1,171 @@
-@include border($neteller, 'neteller' );
-@include border($skrill, 'skrill' );
-.logo{
-    img{
+@include border($neteller, 'neteller');
+@include border($skrill, 'skrill');
+.logo {
+    img {
         display: block;
         max-width: 180px;
     }
 }
-#aside{
-    a{
-        @include txt-color(#fff,$skrill);
+
+#aside {
+    a {
+        @include txt-color(#fff, $skrill);
         @include bg-color(transparent, $neteller);
         padding: 15px;
         display: block;
     }
-    .uk-offcanvas-bar{
+    .uk-offcanvas-bar {
         padding: unset;
     }
 }
-.icon-widget{
+
+.icon-widget {
     padding-right: 0;
-    img{
+    img {
         display: block;
         max-width: 75px;
         width: 100%;
         background-color: #fff;
     }
 }
-.widget-list{
-    .list-group-item{
+
+.widget-list {
+    .list-group-item {
         padding: 0 15px;
-        a{
+        a {
             padding: 15px 0;
         }
-        .active{
-            @include txt-color(#fff!important);
+        .active {
+            @include txt-color(#fff !important);
         }
     }
-    .buy-list{
-        .list-group-item{
+    .buy-list {
+        .list-group-item {
             @include border($neteller);
-            a{
+            a {
                 @include txt-color($neteller-hover, #fff);
                 @include bg-color(transparent, $neteller);
             }
-            .active{
+            .active {
                 @include bg-color($neteller);
             }
         }
     }
-    .sell-list{
-        .list-group-item{
+    .sell-list {
+        .list-group-item {
             @include border($skrill);
-            a{
+            a {
                 @include txt-color($skrill-hover, #fff);
                 @include bg-color(transparent, $skrill);
             }
-            .active{
+            .active {
                 @include bg-color($skrill);
             }
         }
     }
 }
-.rating-widget{
+
+.rating-widget {
     padding: 15px 0;
     max-height: 300px;
     overflow-y: auto;
-    li{
+    li {
         padding: 0 15px;
-        border: 1px solid #ddd;;
+        border: 1px solid #ddd;
+        ;
         border-left: 2px solid $neteller-hover;
-        &:not(:last-child){
+        &:not(:last-child) {
             margin-bottom: 10px;
         }
-        p{
+        p {
             margin: 0;
         }
     }
 }
-@include md{
-    aside{
-        .uk-offcanvas{
+
+.news-detail {
+    img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
+
+.transaction {
+    li {
+        vertical-align: middle;
+        &:not(:last-child) {
+            border-bottom: 1px solid #ddd;
+        }
+        .info {
+            padding: 10px 15px;
+            &:not(:last-child) {
+                font-weight: bold;
+                border-right: 1px solid #ddd;
+            }
+        }
+    }
+    .status {
+        padding: 5px;
+        font-size: 11pt;
+        -webkit-animation: status 1s ease infinite;
+        -moz-animation: status 1s ease infinite;
+        animation: status 1s ease infinite;
+    }
+}
+@-webkit-keyframes status {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @-moz-keyframes status {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @keyframes status {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+@include md {
+    aside {
+        .uk-offcanvas {
             display: block;
             position: static;
         }
-        .uk-offcanvas-bar{
+        .uk-offcanvas-bar {
             position: static;
             width: auto;
             background-color: transparent;
             @include transform(unset);
         }
-        li{
-            &:not(:last-child) a{
+        li {
+            &:not(:last-child) a {
                 margin-right: 10px;
             }
         }
     }
 }
-@include sm{
-    nav a{
-        @include txt-color(#ddd!important, #fff!important);
+
+@include sm {
+    nav a {
+        @include txt-color(#ddd !important, #fff !important);
     }
-    #aside ul{
-        min-height: 100vh!important;
+    #aside ul {
+        min-height: 100vh !important;
         background-color: $skrill;
-        li a{
+        li a {
             display: block;
             padding: 8px 15px;
             @include bg-color(transparent, $skrill-hover);
+        }
+    }
+    .transaction {
+        li {
+            .info {
+                border-right-width: 0;
+            }
         }
     }
 }

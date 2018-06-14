@@ -1,0 +1,113 @@
+<%- include('./layout/header.ejs') -%>
+    <header>
+        <%- include('./comp/nav.ejs') -%>
+    </header>
+    <main class="uk-container py-3">
+        <div class="row">
+            <div class="col-md-3">
+                <%- include('./comp/widget-left.ejs') -%>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-white p-3">
+                    <h5 class="my-0 py-3 mb-3 border-bottom border-muted txt-neteller text-uppercase">
+                        <i uk-icon="icon: info; ratio: 1.5"></i>
+                        <span>Thông tin giao dịch</span>
+                    </h5>
+                    <ul class="transaction px-3 border border-muted">
+                        <li class="row">
+                            <div class="col-md-4 info">
+                                Mã giao dịch:
+                            </div>
+                            <div class="col-md-6 info">
+                                <span uk-tooltip="
+                                title: Đây là mã đơn hàng được phát sinh từ hệ thống. 
+                                Cung cấp mã này cho chúng tôi nếu bạn cần hỗ trợ về đơn hàng này.; 
+                                pos: top">1A5B70B2909D417</span>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-4 info">
+                                Bạn sẽ gửi:
+                            </div>
+                            <div class="col-md-6 info">
+                                Neteller
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-4 info">
+                                Số tiền phải gửi:
+                            </div>
+                            <div class="col-md-6 info">
+                                $1,000
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-4 info">
+                                Bạn sẽ nhận:
+                            </div>
+                            <div class="col-md-6 info">
+                                Vietcombank
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-4 info">
+                                Số tiền sẽ nhận:
+                            </div>
+                            <div class="col-md-6 info">
+                                20,000,000 VNĐ
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-4 info">
+                                Tài khoản nhận:
+                            </div>
+                            <div class="col-md-6 info">
+                                1 - (20UYEN PHUOC LOC)
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-4 info">
+                                Ngày tạo:
+                            </div>
+                            <div class="col-md-6 info">
+                                13-06-2018 21:37:58 PM
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-md-4 info">
+                                Trạng Thái:
+                            </div>
+                            <div class="col-md-6 info">
+                                <span class="status badge badge-default">Đang chờ thanh toán...</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-block">
+                        <p style="text-align:center;">
+                            Xin vui lòng chuyển đúng số tiền
+                            <span class="badge badge-warning text-white uk-text-large">0.05 BTC</span>
+                            <br> vào địa chỉ
+                            <span style="color:#ed3237;font-weight:bold;">3C4xotd7R78eeGxPhGuDyoq5H967zSFAFC</span>
+                            <i class="fa fa-files-o text-copy" aria-hidden="true" data-clipboard-text="3C4xotd7R78eeGxPhGuDyoq5H967zSFAFC" data-toggle="tooltip"
+                                data-placement="top" title="" data-original-title="Sao chép"></i>
+                            <br> Hoặc quét QR Code dưới đây để thanh toán:
+                            <br>
+                            <img src="https://chart.googleapis.com/chart?chs=100x100&amp;chld=L|1&amp;cht=qr&amp;chl=bitcoin:3C4xotd7R78eeGxPhGuDyoq5H967zSFAFC?amount=0.05">
+                        </p>
+                        <p>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i> Sau khi chuyển Bitcoin, bạn có thể kiểm tra giao dịch của bạn tại
+                            <br>
+                            <a href="https://blockchain.info/address/3C4xotd7R78eeGxPhGuDyoq5H967zSFAFC" target="_blank">https://blockchain.info/address/3C4xotd7R78eeGxPhGuDyoq5H967zSFAFC</a>
+                            <br> Chúng tôi sẽ kích hoạt đơn hàng ngay khi có 1 xác nhận trong link blockchain trên.</p>
+                        <p>
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i> Chú ý rằng giá Bitcoin biến động liên tục. Chúng tôi sẽ chốt giá và chuyển khoản ngân hàng
+                            cho bạn ngay khi đủ 1 xác nhận (confirmation) trên Bitcoin network .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <%- include('./comp/widget-right.ejs') -%>
+            </div>
+        </div>
+    </main>
+    <%- include('./layout/footer.ejs') -%>

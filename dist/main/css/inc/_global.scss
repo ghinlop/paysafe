@@ -10,6 +10,9 @@ body{
 .flex-2{
     flex: 2;
 }
+img{
+    max-width: 100%;
+}
 a{
     @include txt-color(#444, $color-5);
 }
