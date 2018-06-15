@@ -1,5 +1,15 @@
 # paysafe
 
+## ***<span style="color: #0088dd">Paysafe Template v1.3 Beta</span>***
+
+### Page Completed
+- Rating page -> <span style="color: green">done</span>
+- FAQ page -> <span style="color: green">done</span>
+
+### Add & Edit More
+- Alert From -> <span style="color: red">move</span>
+- Add Pagination for rating -> <span style="color: green">add</span>
+
 ## ***<span style="color: #0088dd">Paysafe Template v1.2 Beta</span>***
 
 ### Page Completed

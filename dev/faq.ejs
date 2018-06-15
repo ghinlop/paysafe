@@ -1,0 +1,74 @@
+<%- include('./layout/header.ejs') -%>
+    <header>
+        <%- include('./comp/nav.ejs') -%>
+    </header>
+    <main class="uk-container py-3">
+        <div class="row">
+            <div class="col-md-3">
+                <%- include('./comp/widget-left.ejs') -%>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-white p-3">
+                    <ul class="uk-breadcrumb">
+                        <li>
+                            <a href="/">Trang chủ</a>
+                        </li>
+                        <li>
+                            <span>Hỏi đáp</span>
+                        </li>
+                    </ul>
+                    <h5 class="my-0 py-3 border-bottom border-muted txt-neteller text-uppercase">Câu hỏi thường gặp</h5>
+                    <ul class="uk-list uk-list-divider pt-3" uk-accordion>
+                            <li class="uk-open">
+                                    <a class="uk-accordion-title" href="#">Câu hỏi 1</a>
+                                    <div class="uk-accordion-content">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </li>
+                        <% for(let i=2; i<7; i++) {%>
+                                <li>
+                                        <a class="uk-accordion-title" href="#">Câu hỏi <%= i%></a>
+                                        <div class="uk-accordion-content">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </li>
+                            <% } %>
+                    </ul>
+                    <ul class="uk-pagination uk-flex-center" uk-margin>
+                        <li>
+                            <a href="#">
+                                <span uk-pagination-previous></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">1</a>
+                        </li>
+                        <li class="uk-disabled">
+                            <span>...</span>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">6</a>
+                        </li>
+                        <li class="uk-active">
+                            <span>7</span>
+                        </li>
+                        <li>
+                            <a href="#">8</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span uk-pagination-next></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <%- include('./comp/widget-right.ejs') -%>
+            </div>
+        </div>
+    </main>
+    <%- include('./layout/footer.ejs') -%>
