@@ -1,0 +1,9 @@
+{
+  "name": "paysafe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ghinlop/paysafe.git",
+  "author": "Ghin Lop <ghinlop@gmail.com>",
+  "license": "MIT",
+  "eng": "ejs"
+}

@@ -1,5 +1,11 @@
 # paysafe
 
+## ***<span style="color: #0088dd">Paysafe Template v1.5 Beta</span>***
+
+### Add & Edit More
+- Profile                                   -> <span style="color: green">add</span>
+- History List                              -> <span style="color: green">add</span>
+
 ## ***<span style="color: #0088dd">Paysafe Template v1.4 Beta</span>***
 
 ### Add & Edit More
