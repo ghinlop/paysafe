@@ -44,6 +44,18 @@ function product_filter() {
     }
 }
 
+const selectControl = $('[cls-control]');
+for (let slc of selectControl){
+    let _id = $(slc).attr('id');
+    let default_value = null;
+    $(`#${_id} li`).click(function(){
+        let newTxt = $(this).find('a').html();
+        let newVal = $(this).find('a').attr('cls-value')
+        $('[cls-set]').html(newTxt);
+        $(`#${_id} input`).val(newVal);
+    })
+}
+
 function nocopy() {
 
     //<![CDATA[

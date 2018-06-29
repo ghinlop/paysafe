@@ -8,3 +8,35 @@
 @import './inc/_tabs.scss';
 @import './inc/_custom.scss';
 @import './inc/_footer.scss';
+
+
+.gh-select{
+    span{
+        position: relative;
+        display: block;
+        padding: 10px;
+        &::after{
+            content: '\f107';
+            position: absolute;
+            font-family: $fa;
+            top: 50%;
+            right: 10px;
+            @include transform(translateY(-50%));
+        }
+    }
+    .select-body{
+        .select-item{
+            a{
+                display: block;
+                padding: 5px 15px;
+            }
+            &:not(:last-child) a{
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    }
+    img{
+        max-width: 35px;
+        display: inline-block;
+    }
+}

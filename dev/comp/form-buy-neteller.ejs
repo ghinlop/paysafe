@@ -45,7 +45,15 @@
             <div class="px-3 mb-3">
                 <label class="uk-form-label uk-text-bold">Ngân hàng chuyển tiền</label>
                 <div class="uk-form-controls">
-                    <input type="text" class="uk-input" disabled readonly value="Vietcombank">
+                    <div id="gh-select" class="gh-select" cls-control>
+                        <span class="bg-light border border-neteller" cls-set>test</span>
+                        <ul class="nolist bg-white my-0 select-body shadow" uk-drop="pos: bottom-justify; mode: click">
+                            <li class="select-item"><a href="#" cls-value="1"><img src="/dist/images/neteller.png" alt=""> Test 1</a></li>
+                            <li class="select-item"><a href="#" cls-value="2"><img src="/dist/images/skrill.png" alt=""> Test 2</a></li>
+                            <li class="select-item"><a href="#" cls-value="3"><img src="/dist/images/neteller.png" alt=""> Test 3</a></li>
+                        </ul>
+                        <input type="text" class="uk-input" disabled readonly value="" >
+                    </div>
                 </div>
             </div>
             <div class="border-top border-muted p-3 text-md-right text-center">

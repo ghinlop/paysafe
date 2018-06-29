@@ -3,13 +3,13 @@
 .logo {
     img {
         display: block;
-        max-width: 180px;
+        max-width: 160px;
     }
 }
 
 #aside {
     a {
-        @include txt-color(#fff, $skrill);
+        @include txt-color($neteller, #fff);
         @include bg-color(transparent, $neteller);
         padding: 15px;
         display: block;
@@ -147,6 +147,7 @@
         }
     }
 }
+
 
 @include sm {
     nav a {

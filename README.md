@@ -1,4 +1,33 @@
-# paysafe
+<center>
+
+[![Vutaweb.Vn](./dist/images/logo.png)](https://vutaweb.vn)
+# Paysafe Template
+
+</center>
+
+
+## ***<span style="color: #0088dd">Paysafe Template v1.6 Beta</span>***
+### Edit & Remove
+- Widget Left
+    - Add Class "uk-text-bold"
+- Wdiget Right
+    - Add Class "uk-text-bold"
+    - Change Class Icon "col-3 -> col-2"
+    - Change Class Icon "col-10 -> col-10"
+    - Remove Class "uk-text-large"
+- Header & Aside
+    - Remove  class background "bg-neteller"
+    - Add class background "bg-white"
+    - Change color & background link
+- Alert
+    - Change Class Alert "uk-alert-* -> bg-*"
+    - Add class text color for Alert "text-white"
+
+### Add
+- Add Select Custom
+    - Update Css for Select Custom
+    - Update Javascript for Select Custom
+- Add Footer
 
 ## ***<span style="color: #0088dd">Paysafe Template v1.5 Beta</span>***
 
