@@ -25,8 +25,8 @@
 
 ### Add
 - Add Select Custom
-    - Update Css for Select Custom
-    - Update Javascript for Select Custom
+    - Update Css for Select Custom (main.css)
+    - Update Javascript for Select Custom (main.js)
 - Add Footer
 
 ## ***<span style="color: #0088dd">Paysafe Template v1.5 Beta</span>***
