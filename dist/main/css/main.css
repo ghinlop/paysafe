@@ -7708,7 +7708,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .gh-select .select-body .select-item a {
   display: block;
-  padding: 5px 15px; }
+  padding: 5px 15px;
+  background-color: #fff; }
+  .gh-select .select-body .select-item a:hover {
+    background-color: #ddd; }
 
 .gh-select .select-body .select-item:not(:last-child) a {
   border-bottom: 1px solid #ddd; }
