@@ -13,7 +13,7 @@
 - Wdiget Right
     - Add Class "uk-text-bold"
     - Change Class Icon "col-3 -> col-2"
-    - Change Class Icon "col-10 -> col-10"
+    - Change Class Icon "col-9 -> col-10"
     - Remove Class "uk-text-large"
 - Header & Aside
     - Remove  class background "bg-neteller"
